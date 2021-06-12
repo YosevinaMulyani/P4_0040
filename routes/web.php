@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/book', [jenisbuku::class,'index']);
+Route::get('/book/tambah', [jenisbuku::class,'tambah']);
+Route::get('/book/hapus/{id}', [jenisbuku::class,'hapus']);
+Route::post('/book/store',[jenisbuku::class,'store']);
+Route::get('/book/edit/{id}',[jenisbuku::class,'edit']);
+Route::post('/book/update',[jenisbuku::class,'update']);
+Route::get('/book/cari',[jenisbuku::class,'cari']);

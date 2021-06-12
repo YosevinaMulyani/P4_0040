@@ -4,8 +4,9 @@
 <title>Buku</title>
 </head>
 <body>
-    <h2>Yosevina Mulyani</h2>
+    <h2>Yosevina Mulyani 1461900040</h2>
     <h3>Buku</h3>
+    <a href="/export"> Export Excel </a>
     <p>Cari Buku :</p>
         <form action="/buku/cari" method="GET">
         <input type="text" name="lihat" placeholder="Masukan disini .." value="{{ old('cari') }}">
